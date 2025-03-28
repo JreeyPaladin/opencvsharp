@@ -1,4 +1,4 @@
-name: Docker mcr.microsoft.com/dotnet/sdk:6.0-focal
+name: Docker mcr.microsoft.com/dotnet/sdk:8.0-focal
 
 on:
   pull_request:
@@ -18,4 +18,4 @@ jobs:
       - name: docker build
         run: |
           cd docker/ubuntu22-dotnet6sdk-opencv4.7.0
-          docker build -t shimat/ubuntu22-dotnet6sdk-opencv4.7.0 .
+          docker build -t JreeyPaladin/ubuntu22-dotnet8sdk-opencv4.7.0 .
